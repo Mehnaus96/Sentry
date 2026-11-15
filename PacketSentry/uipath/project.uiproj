@@ -1,0 +1,6 @@
+{
+  "Name": "PacketSentry_Orchestrator",
+  "ProjectType": "Process",
+  "Description": "Automated Network Traffic Analyzer & SOC Reporting System Orchestrator",
+  "MainFile": "Main.xaml"
+}

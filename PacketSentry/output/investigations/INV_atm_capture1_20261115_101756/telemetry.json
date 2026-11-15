@@ -1,0 +1,114 @@
+{
+  "summary": {
+    "total_packets": 12,
+    "total_bytes": 1008,
+    "total_mb": 0.001,
+    "duration_seconds": 4.994,
+    "avg_packet_size_bytes": 84.0,
+    "avg_data_rate_kbps": 1.61,
+    "unique_source_ips": 2,
+    "unique_destination_ips": 2,
+    "unique_total_ips": 2,
+    "start_time": "2000-10-03 04:24:41 UTC",
+    "end_time": "2000-10-03 04:24:46 UTC"
+  },
+  "protocol_distribution": [
+    {
+      "protocol": "ICMP",
+      "packet_count": 12,
+      "total_bytes": 1008,
+      "percentage": 100.0
+    }
+  ],
+  "top_source_ips": [
+    {
+      "src_ip": "192.168.70.1",
+      "packets_sent": 6,
+      "bytes_sent": 504,
+      "distinct_dst_ips": 1,
+      "distinct_dst_ports": 0
+    },
+    {
+      "src_ip": "192.168.70.2",
+      "packets_sent": 6,
+      "bytes_sent": 504,
+      "distinct_dst_ips": 1,
+      "distinct_dst_ports": 0
+    }
+  ],
+  "top_destination_ips": [
+    {
+      "dst_ip": "192.168.70.1",
+      "packets_received": 6,
+      "bytes_received": 504,
+      "distinct_src_ips": 1
+    },
+    {
+      "dst_ip": "192.168.70.2",
+      "packets_received": 6,
+      "bytes_received": 504,
+      "distinct_src_ips": 1
+    }
+  ],
+  "top_destination_ports": [],
+  "top_conversations": [
+    {
+      "host_a": "192.168.70.1",
+      "host_b": "192.168.70.2",
+      "total_packets": 12,
+      "total_bytes": 1008,
+      "protocols": [
+        "ICMP"
+      ]
+    }
+  ],
+  "dns_statistics": {
+    "total_queries": 0,
+    "total_responses": 0,
+    "unique_domains_count": 0,
+    "avg_query_length": 0.0,
+    "top_queried_domains": []
+  },
+  "tcp_statistics": {
+    "total_tcp_packets": 0,
+    "syn_count": 0,
+    "syn_ack_count": 0,
+    "ack_count": 0,
+    "rst_count": 0,
+    "fin_count": 0,
+    "syn_to_synack_ratio": 0.0,
+    "rst_percentage": 0.0
+  },
+  "timeline": [
+    {
+      "time_bin": 970527281.554819,
+      "packet_count": 4,
+      "byte_count": 336,
+      "time_label": "04:24:41"
+    },
+    {
+      "time_bin": 970527282.554819,
+      "packet_count": 2,
+      "byte_count": 168,
+      "time_label": "04:24:42"
+    },
+    {
+      "time_bin": 970527283.554819,
+      "packet_count": 2,
+      "byte_count": 168,
+      "time_label": "04:24:43"
+    },
+    {
+      "time_bin": 970527284.554819,
+      "packet_count": 2,
+      "byte_count": 168,
+      "time_label": "04:24:44"
+    },
+    {
+      "time_bin": 970527285.554819,
+      "packet_count": 2,
+      "byte_count": 168,
+      "time_label": "04:24:45"
+    }
+  ]
+}

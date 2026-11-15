@@ -1,0 +1,62 @@
+{
+  "name": "PacketSentry_Orchestrator",
+  "projectId": "7f13c6a4-4df8-43d9-95a2-3f8d9b1c7621",
+  "description": "Automated Network Traffic Analyzer & SOC Reporting System Orchestrator",
+  "main": "Main.xaml",
+  "dependencies": {
+    "UiPath.System.Activities": "[26.10.1]",
+    "UiPath.UIAutomation.Activities": "[26.10.8]",
+    "UiPath.UIAutomation.Activities.Design.RecoveryPanel": "[24.10.19]",
+    "UiPath.UIAutomation.Activities.DesignExperience": "[26.10.8]",
+    "UiPath.UIAutomation.Activities.DesignExperience.Windows": "[26.10.8]",
+    "UiPath.WebAPI.Activities": "[2.5.2]"
+  },
+  "webServices": [],
+  "entitiesStores": [],
+  "schemaVersion": "4.0",
+  "studioVersion": "23.4.0.0",
+  "projectVersion": "1.0.0",
+  "runtimeOptions": {
+    "autoDispose": false,
+    "netFrameworkLazyLoading": false,
+    "isPausable": true,
+    "isAttended": false,
+    "requiresUserInteraction": true,
+    "supportsPersistence": false,
+    "workflowSerialization": "DataContract",
+    "excludedLoggedData": [
+      "Private:*",
+      "*password*"
+    ],
+    "executionType": "Workflow",
+    "readyForPiP": false,
+    "startsInPiP": false,
+    "mustRestoreAllDependencies": false,
+    "pipType": "ChildSession"
+  },
+  "designOptions": {
+    "projectProfile": "Developement",
+    "outputType": "Process",
+    "libraryOptions": {
+      "privateWorkflows": []
+    },
+    "processOptions": {
+      "ignoredFiles": []
+    },
+    "fileInfoCollection": [],
+    "saveToCloud": false
+  },
+  "expressionLanguage": "VisualBasic",
+  "entryPoints": [
+    {
+      "filePath": "Main.xaml",
+      "uniqueId": "b18a4a58-6c89-4fa2-93cb-7193f4e2f891",
+      "input": [],
+      "output": []
+    }
+  ],
+  "isTemplate": false,
+  "templateProjectData": {},
+  "publishData": {},
+  "targetFramework": "Windows"
+}

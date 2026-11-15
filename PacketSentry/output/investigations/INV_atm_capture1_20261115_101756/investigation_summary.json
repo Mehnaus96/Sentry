@@ -1,0 +1,26 @@
+{
+  "investigation_id": "INV_atm_capture1_20261115_101756",
+  "status": "COMPLETED",
+  "input_pcap": "C:\\Users\\mehna\\.gemini\\antigravity\\scratch\\PacketSentry\\data\\uploads\\atm_capture1.cap",
+  "investigation_folder": "C:\\Users\\mehna\\.gemini\\antigravity\\scratch\\PacketSentry\\output\\investigations\\INV_atm_capture1_20261115_101756",
+  "execution_start": "2026-11-15 10:17:56 UTC",
+  "execution_end": "2026-11-15 10:17:58 UTC",
+  "processing_time_sec": 2.14,
+  "packets_processed": 12,
+  "total_alerts_count": 0,
+  "alerts_by_severity": {
+    "Critical": 0,
+    "High": 0,
+    "Medium": 0,
+    "Low": 0,
+    "Informational": 0
+  },
+  "high_or_critical_alerts_detected": false,
+  "artifacts": {
+    "extracted_csv": "C:\\Users\\mehna\\.gemini\\antigravity\\scratch\\PacketSentry\\output\\investigations\\INV_atm_capture1_20261115_101756\\atm_capture1_extracted.csv",
+    "extracted_json": "C:\\Users\\mehna\\.gemini\\antigravity\\scratch\\PacketSentry\\output\\investigations\\INV_atm_capture1_20261115_101756\\atm_capture1_extracted.json",
+    "telemetry_json": "C:\\Users\\mehna\\.gemini\\antigravity\\scratch\\PacketSentry\\output\\investigations\\INV_atm_capture1_20261115_101756\\telemetry.json",
+    "alerts_json": "C:\\Users\\mehna\\.gemini\\antigravity\\scratch\\PacketSentry\\output\\investigations\\INV_atm_capture1_20261115_101756\\alerts.json",
+    "pdf_report": "C:\\Users\\mehna\\.gemini\\antigravity\\scratch\\PacketSentry\\output\\investigations\\INV_atm_capture1_20261115_101756\\incident_report_atm_capture1.pdf"
+  }
+}

@@ -1,0 +1,271 @@
+{
+  "summary": {
+    "total_packets": 32,
+    "total_bytes": 1833,
+    "total_mb": 0.002,
+    "duration_seconds": 3.49,
+    "avg_packet_size_bytes": 57.3,
+    "avg_data_rate_kbps": 4.2,
+    "unique_source_ips": 5,
+    "unique_destination_ips": 5,
+    "unique_total_ips": 8,
+    "start_time": "2023-11-15 03:43:20 UTC",
+    "end_time": "2023-11-15 03:43:23 UTC"
+  },
+  "protocol_distribution": [
+    {
+      "protocol": "TCP",
+      "packet_count": 30,
+      "total_bytes": 1620,
+      "percentage": 93.75
+    },
+    {
+      "protocol": "DNS",
+      "packet_count": 2,
+      "total_bytes": 213,
+      "percentage": 6.25
+    }
+  ],
+  "top_source_ips": [
+    {
+      "src_ip": "10.0.0.99",
+      "packets_sent": 15,
+      "bytes_sent": 810,
+      "distinct_dst_ips": 1,
+      "distinct_dst_ports": 15
+    },
+    {
+      "src_ip": "10.0.0.77",
+      "packets_sent": 12,
+      "bytes_sent": 648,
+      "distinct_dst_ips": 1,
+      "distinct_dst_ports": 1
+    },
+    {
+      "src_ip": "192.168.1.100",
+      "packets_sent": 3,
+      "bytes_sent": 178,
+      "distinct_dst_ips": 2,
+      "distinct_dst_ports": 2
+    },
+    {
+      "src_ip": "192.168.1.200",
+      "packets_sent": 1,
+      "bytes_sent": 143,
+      "distinct_dst_ips": 1,
+      "distinct_dst_ports": 1
+    },
+    {
+      "src_ip": "93.184.216.34",
+      "packets_sent": 1,
+      "bytes_sent": 54,
+      "distinct_dst_ips": 1,
+      "distinct_dst_ports": 1
+    }
+  ],
+  "top_destination_ips": [
+    {
+      "dst_ip": "192.168.1.50",
+      "packets_received": 27,
+      "bytes_received": 1458,
+      "distinct_src_ips": 2
+    },
+    {
+      "dst_ip": "93.184.216.34",
+      "packets_received": 2,
+      "bytes_received": 108,
+      "distinct_src_ips": 1
+    },
+    {
+      "dst_ip": "192.168.1.100",
+      "packets_received": 1,
+      "bytes_received": 54,
+      "distinct_src_ips": 1
+    },
+    {
+      "dst_ip": "8.8.4.4",
+      "packets_received": 1,
+      "bytes_received": 143,
+      "distinct_src_ips": 1
+    },
+    {
+      "dst_ip": "8.8.8.8",
+      "packets_received": 1,
+      "bytes_received": 70,
+      "distinct_src_ips": 1
+    }
+  ],
+  "top_destination_ports": [
+    {
+      "port": 445,
+      "service": "Microsoft-DS (SMB)",
+      "packet_count": 13,
+      "percentage": 40.62,
+      "total_bytes": 702
+    },
+    {
+      "port": 53,
+      "service": "DNS",
+      "packet_count": 3,
+      "percentage": 9.38,
+      "total_bytes": 267
+    },
+    {
+      "port": 80,
+      "service": "HTTP",
+      "packet_count": 3,
+      "percentage": 9.38,
+      "total_bytes": 162
+    },
+    {
+      "port": 21,
+      "service": "FTP-Control",
+      "packet_count": 1,
+      "percentage": 3.12,
+      "total_bytes": 54
+    },
+    {
+      "port": 22,
+      "service": "SSH",
+      "packet_count": 1,
+      "percentage": 3.12,
+      "total_bytes": 54
+    },
+    {
+      "port": 23,
+      "service": "Telnet",
+      "packet_count": 1,
+      "percentage": 3.12,
+      "total_bytes": 54
+    },
+    {
+      "port": 25,
+      "service": "SMTP",
+      "packet_count": 1,
+      "percentage": 3.12,
+      "total_bytes": 54
+    },
+    {
+      "port": 110,
+      "service": "POP3",
+      "packet_count": 1,
+      "percentage": 3.12,
+      "total_bytes": 54
+    },
+    {
+      "port": 135,
+      "service": "MS-RPC",
+      "packet_count": 1,
+      "percentage": 3.12,
+      "total_bytes": 54
+    },
+    {
+      "port": 139,
+      "service": "NetBIOS-SSN",
+      "packet_count": 1,
+      "percentage": 3.12,
+      "total_bytes": 54
+    }
+  ],
+  "top_conversations": [
+    {
+      "host_a": "10.0.0.99",
+      "host_b": "192.168.1.50",
+      "total_packets": 15,
+      "total_bytes": 810,
+      "protocols": [
+        "TCP"
+      ]
+    },
+    {
+      "host_a": "10.0.0.77",
+      "host_b": "192.168.1.50",
+      "total_packets": 12,
+      "total_bytes": 648,
+      "protocols": [
+        "TCP"
+      ]
+    },
+    {
+      "host_a": "192.168.1.100",
+      "host_b": "93.184.216.34",
+      "total_packets": 3,
+      "total_bytes": 162,
+      "protocols": [
+        "TCP"
+      ]
+    },
+    {
+      "host_a": "192.168.1.100",
+      "host_b": "8.8.8.8",
+      "total_packets": 1,
+      "total_bytes": 70,
+      "protocols": [
+        "DNS"
+      ]
+    },
+    {
+      "host_a": "192.168.1.200",
+      "host_b": "8.8.4.4",
+      "total_packets": 1,
+      "total_bytes": 143,
+      "protocols": [
+        "DNS"
+      ]
+    }
+  ],
+  "dns_statistics": {
+    "total_queries": 2,
+    "total_responses": 0,
+    "unique_domains_count": 2,
+    "avg_query_length": 46.5,
+    "top_queried_domains": [
+      {
+        "domain": "google.com",
+        "query_count": 1,
+        "domain_length": 10
+      },
+      {
+        "domain": "v1-exfil-secret-data-payload-chunk-998877.c2-command-and-control-server.example.org",
+        "query_count": 1,
+        "domain_length": 83
+      }
+    ]
+  },
+  "tcp_statistics": {
+    "total_tcp_packets": 30,
+    "syn_count": 28,
+    "syn_ack_count": 1,
+    "ack_count": 1,
+    "rst_count": 0,
+    "fin_count": 0,
+    "syn_to_synack_ratio": 28.0,
+    "rst_percentage": 0.0
+  },
+  "timeline": [
+    {
+      "time_bin": 1700000000.01,
+      "packet_count": 4,
+      "byte_count": 232,
+      "time_label": "03:43:20"
+    },
+    {
+      "time_bin": 1700000001.01,
+      "packet_count": 15,
+      "byte_count": 810,
+      "time_label": "03:43:21"
+    },
+    {
+      "time_bin": 1700000002.01,
+      "packet_count": 12,
+      "byte_count": 648,
+      "time_label": "03:43:22"
+    },
+    {
+      "time_bin": 1700000003.01,
+      "packet_count": 1,
+      "byte_count": 143,
+      "time_label": "03:43:23"
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="850,2200" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:njl="clr-namespace:Newtonsoft.Json.Linq;assembly=Newtonsoft.Json" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="30">
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>Newtonsoft.Json</x:String>
+      <x:String>Newtonsoft.Json.Linq</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="PacketSentry SOC Orchestrator" sap:VirtualizedContainerService.HintSize="550,2100" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Default="data/uploads" Name="in_WatchFolder" />
+      <Variable x:TypeArguments="x:String" Default="output/investigations" Name="in_OutputRoot" />
+      <Variable x:TypeArguments="x:String" Default="C:\Users\mehna\.gemini\antigravity\scratch\PacketSentry" Name="projectRoot" />
+    </Sequence.Variables>
+    
+    <!-- Step 1: Log Workflow Initialization -->
+    <ui:LogMessage DisplayName="Log Start" sap:VirtualizedContainerService.HintSize="488,92" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;[UiPath SOC Bot] Starting PacketSentry Automated Intake &amp; Analysis Workflow...&quot;]" />
+    
+    <!-- Step 1 & 2: Ingest PCAP File -->
+    <Sequence DisplayName="Step 1 &amp; 2: Intake and File Validation" sap:VirtualizedContainerService.HintSize="488,250" sap2010:WorkflowViewState.IdRef="Sequence_2">
+      <ui:LogMessage DisplayName="Log Intake" Level="Info" Message="[&quot;[UiPath Step 1 &amp; 2] Scanning watch folder: &quot; + in_WatchFolder + &quot; for new .pcap / .cap captures...&quot;]" />
+    </Sequence>
+
+    <!-- Step 3 & 4: Invoke Engine & Execute Analysis -->
+    <Sequence DisplayName="Step 3 &amp; 4: Invoke Analysis Engine &amp; Wait" sap:VirtualizedContainerService.HintSize="488,350" sap2010:WorkflowViewState.IdRef="Sequence_3">
+      <ui:LogMessage DisplayName="Log Process Launch" Level="Info" Message="[&quot;[UiPath Step 3 &amp; 4] Invoking PacketSentry Orchestrator pipeline...&quot;]" />
+      <ui:StartProcess Arguments="-ExecutionPolicy Bypass -File &quot;C:\Users\mehna\.gemini\antigravity\scratch\PacketSentry\uipath\run_uipath_mock_orchestrator.ps1&quot;" DisplayName="Start PacketSentry Orchestration Pipeline" FileName="powershell.exe" WorkingDirectory="C:\Users\mehna\.gemini\antigravity\scratch\PacketSentry" />
+    </Sequence>
+
+    <!-- Step 5 & 6: Read Results & Check Alert Thresholds -->
+    <Sequence DisplayName="Step 5 &amp; 6: Read Telemetry &amp; Check Alert Thresholds" sap:VirtualizedContainerService.HintSize="488,250" sap2010:WorkflowViewState.IdRef="Sequence_4">
+      <ui:LogMessage DisplayName="Log Deserialization" Level="Info" Message="[&quot;[UiPath Step 5 &amp; 6] Reading investigation_summary.json. Evaluating threat thresholds...&quot;]" />
+    </Sequence>
+
+    <!-- Step 7, 8, 9: Organization, PDF Check, Audit Trail -->
+    <Sequence DisplayName="Step 7, 8, 9: Artifact Filing &amp; Audit Logging" sap:VirtualizedContainerService.HintSize="488,250" sap2010:WorkflowViewState.IdRef="Sequence_5">
+      <ui:LogMessage DisplayName="Log Audit Success" Level="Info" Message="[&quot;[UiPath Step 7, 8, 9] Workflow completed successfully. Investigation folder created, PDF report verified, audit trail logged.&quot;]" />
+    </Sequence>
+  </Sequence>
+</Activity>

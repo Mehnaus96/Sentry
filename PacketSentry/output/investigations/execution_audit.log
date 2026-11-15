@@ -1,0 +1,9 @@
+[2026-11-15 07:11:42 UTC] [STATUS: ESCALATED_HIGH_PRIORITY] Investigation: INV_sample_capture_20261115_071140 | Packets: 32 | Alerts: 5 | PDF: incident_report_sample_capture.pdf | ExitCode: 10
+[2026-11-15 10:00:31 UTC] [STATUS: STANDARD_ARCHIVE] Investigation: INV_atm_capture1_20261115_100027 | Packets: 12 | Alerts: 0 | PDF: incident_report_atm_capture1.pdf | ExitCode: 0
+[2026-11-15 10:04:39 UTC] [STATUS: ESCALATED_HIGH_PRIORITY] Investigation: INV_sample_capture_20261115_100434 | Packets: 32 | Alerts: 5 | PDF: incident_report_sample_capture.pdf | ExitCode: 10
+[2026-11-15 10:06:33 UTC] [STATUS: ESCALATED_HIGH_PRIORITY] Investigation: INV_sample_capture_20261115_100628 | File: sample_capture.pcap | Packets: 32 | Alerts: 5 | PDF: incident_report_sample_capture.pdf | ExitCode: 10
+[2026-11-15 10:06:37 UTC] [STATUS: STANDARD_ARCHIVE] Investigation: INV_atm_capture1_20261115_100635 | File: atm_capture1.cap | Packets: 12 | Alerts: 0 | PDF: incident_report_atm_capture1.pdf | ExitCode: 0
+[2026-11-15 10:15:42 UTC] [STATUS: ESCALATED_HIGH_PRIORITY] Investigation: INV_sample_capture_20261115_101538 | File: sample_capture.pcap | Packets: 32 | Alerts: 5 | PDF: incident_report_sample_capture.pdf | ExitCode: 10
+[2026-11-15 10:15:48 UTC] [STATUS: STANDARD_ARCHIVE] Investigation: INV_atm_capture1_20261115_101545 | File: atm_capture1.cap | Packets: 12 | Alerts: 0 | PDF: incident_report_atm_capture1.pdf | ExitCode: 0
+[2026-11-15 10:17:54 UTC] [STATUS: ESCALATED_HIGH_PRIORITY] Investigation: INV_sample_capture_20261115_101750 | File: sample_capture.pcap | Packets: 32 | Alerts: 5 | PDF: incident_report_sample_capture.pdf | ExitCode: 10
+[2026-11-15 10:17:59 UTC] [STATUS: STANDARD_ARCHIVE] Investigation: INV_atm_capture1_20261115_101756 | File: atm_capture1.cap | Packets: 12 | Alerts: 0 | PDF: incident_report_atm_capture1.pdf | ExitCode: 0
